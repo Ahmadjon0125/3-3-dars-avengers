@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3\3-dars</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container pe-5">
+    <h1 class="text-center mb-4">Movies catalog</h1>
+    <div class="row">
+      <div class="col-4 pt-5">
+        <form action="https://echo.htmlacademy.ru/courses" method="POST">
+          <div class="mb-4">
+            <input class="form-control" type="text" name="user_name" aria-label="user-name" placeholder="ave" required autocomplete="off">
+          </div>
+          <div class="mb-4">
+            <input class="form-control" type="text" name="user_age" aria-label="user-age" placeholder="5" required autocomplete="off">
+          </div>
+          <select class="form-select mb-3" name="user_select" aria-label=".form-select-lg example required">
+            <option selected value="All">All</option>
+            <option value="First">First</option>
+            <option value="Second">Second</option>
+            <option value="Third">Third</option>
+          </select>
+          <div class="mb-3">
+            <input class="form-control" list="datalistOptions" id="exampleDataList" name="user_datalist" aria-label="datalist" placeholder="Type to search..." required>
+            <datalist id="datalistOptions">
+              <option value="High to low">
+                <option value="Low to high">
+                </datalist>
+              </div>
+              <div class="col-12 d-grid mb-4">
+                <button type="submit" class="btn btn-primary">Search</button>
+              </div>
+            </form>
+            <h2 class="mb-3">Bookmarked movies</h2>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <strong>Avengers:Infinity War</strong>
+                <button type="submit" class="btn btn-danger mt-3 d-block">Remove</button>
+              </li>
+              <li class="list-group-item">
+                <strong>The Avengers</strong>
+                <button type="submit" class="btn btn-danger mt-3 d-block">Remove</button>
+              </li>
+              <li class="list-group-item">
+                <strong>12 Years a Slave</strong>
+                <button type="submit" class="btn btn-danger mt-3 d-block">Remove</button>
+              </li>
+            </ul>
+          </div>
+          <div class="col-8 ps-5">
+            <h3 class="mb-2">Search results: 39</h3>
+            <div class="alert alert-success mb-4" role="alert">
+              Use the form on the left to search for a movie
+            </div>
+            <div class="row mb-5">
+              <div class="col-6">
+                <div class="card" style="width: 100%;">
+                  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./images/Avengers-1.jpg" width="380" height="210" class="d-block w-100" alt="Avengers-1">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./images/avengers-2.jpg" width="380" height="210" class="d-block w-100" alt="avengers-2">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./images/avengers-3.jpg" width="380" height="210" class="d-block w-100" alt="avengers-3">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title">Avengers:Infinity War</h4>
+                    <div class="d-flex align-items-center mb-4">
+                      <img src="./images/calendar-time.png" width="30" height="30" alt="calendar-time">
+                      <p class="card-text ms-2">2018</p>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                      <img src="./images/yellow-star.png" width="25" height="25" alt="yellow-star">
+                      <p class="card-text ms-2">8.7</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <button type="button" class="btn btn-outline-primary">Watch trailer</button>
+                      <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#staticBackdrop">More info</button>
+                      <button type="button" class="btn btn-outline-success">Bookmark</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card" style="width: 100%;">
+                  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./images/avengers-4.jpg" width="380" height="210" class="d-block w-100" alt="avengers-4">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./images/avengers-5.jpg" width="380" height="210" class="d-block w-100" alt="avengers-5">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./images/avengers-6.jpg" width="380" height="210" class="d-block w-100" alt="avengers-6">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title">Avengers:Infinity War</h4>
+                    <div class="d-flex align-items-center mb-4">
+                      <img src="./images/calendar-time.png" width="30" height="30" alt="calendar-time">
+                      <p class="card-text ms-2">2012</p>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                      <img src="./images/yellow-star.png" width="25" height="25" alt="yellow-star">
+                      <p class="card-text ms-2">8.1</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <button type="button" class="btn btn-outline-primary">Watch trailer</button>
+                      <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#staticBackdrop">More info</button>
+                      <button type="button" class="btn btn-outline-success">Bookmark</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <nav aria-label="...">
+              <ul class="pagination pagination-sm justify-content-center">
+                <li class="page-item active" aria-current="page">
+                  <span class="page-link">1</span>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <script src="./js/bootstrap.min.js"></script><!-- Button trigger modal -->
+      <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></button> -->
+      
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">The Avengers (2012 film)</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              The film's development began when Marvel Studios received a loan from Merrill Lynch in April 2005. After the success of the film Iron Man in May 2008, Marvel announced that The Avengers would be released in July 2011 and would bring together Tony Stark (Downey), Steve Rogers (Evans), Bruce Banner (Ruffalo), and Thor (Hemsworth) from Marvel's previous films. With the signing of Johansson as Natasha Romanoff in March 2009 and Renner as Clint Barton in June 2010, the film was pushed back for a 2012 release. Whedon was brought on board in April 2010 and rewrote the original screenplay by Zak Penn. Production began in April 2011 in Albuquerque, New Mexico, before moving to Cleveland, Ohio in August and New York City in September. The film has more than 2,200 visual effects shots.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Understood</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+    </html>
